@@ -1,3 +1,5 @@
+import { weiToEther } from "./utils/utils";
+
 export default function Escrow({
   address,
   arbiter,
@@ -18,7 +20,7 @@ export default function Escrow({
         </li>
         <li>
           <div> Value </div>
-          <div> {value} </div>
+          <div> {weiToEther(value).toString()} ETH</div>
         </li>
         <div
           className="button"
